@@ -16,17 +16,9 @@ services:
         shortname: "hugo-theme-stack"
     # GA Tracking ID
     googleAnalytics:
-        id:
+        id: G-8QBRQERD5B
 
 
-# 更新时间：优先读取git时间 -> git时间不存在，就读取本地文件修改时间
-frontmatter:
-  lastmod:
-    - :git
-    - :fileModTime
-
-# 允许获取Git信息		
-enableGitInfo: true
 
 pagination:
     pagerSize: 4
@@ -44,11 +36,11 @@ params:
 
     footer:
         since: 2026
-        customText:
+        customText:  '<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">豫ICP备2025127245号</a>'
 
     dateFormat:
-        published: 2006-01-02 15:04 MST
-        lastUpdated: 2006-01-02 15:04 MST
+        published: 2006-01-02 15:04
+        lastUpdated: 2006-01-02 15:04
 
     sidebar:
         emoji: 🍥
@@ -89,11 +81,11 @@ params:
                   limit: 5
             - type: categories
               params:
-                  limit: 10
+                  limit: 5
 
             - type: tag-cloud
               params:
-                  limit: 10
+                  limit: 5
         page:
             - type: toc
 
@@ -148,12 +140,7 @@ menu:
           url: mailto:qaqnoname@163.com
           params:
               icon: mail
-
-        - identifier: wechat
-          name: WeChat
-          url: https://twitter.com
-          params:
-              icon: brand-wechat            
+          
 
 related:
     includeNewer: true
